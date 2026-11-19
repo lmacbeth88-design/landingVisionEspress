@@ -25,11 +25,9 @@
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
       <div class="flex items-center gap-6">
         <div class="flex items-center gap-3">
-          <img src="/src/assets/logo-empresa.svg" alt="Logotipo Lexium Forge" class="h-14 w-auto object-contain"
-            onerror="this.src='/src/assets/logo-empresa.png'; this.onerror=null;">
+          <img src="./src/assets/logo-empresa.png" alt="Logotipo Lexium Forge" class="h-14 w-auto object-contain">
           <div class="h-7 w-px bg-white/10 hidden sm:block"></div>
-          <img src="/src/assets/logo-vision-express.svg" alt="Logotipo Visión Express" class="h-14 w-auto object-contain"
-            onerror="this.src='/src/assets/logo-vision-express.png'; this.onerror=null;">
+          <img src="./src/assets/logo-vision-express.png" alt="Logotipo Visión Express" class="h-14 w-auto object-contain">
         </div>
         <span class="hidden text-sm text-slate-300 lg:block ml-4">Registro electrónico de jornada | 100% local</span>
       </div>
@@ -94,9 +92,8 @@
           <div class="card relative overflow-visible">
             <div class="absolute -top-10 left-1/2 z-20 -translate-x-1/2">
               <div class="rounded-full bg-[#0f1015]/80 px-6 py-2 backdrop-blur-xl ring-1 ring-white/10">
-                <img src="/src/assets/logo-vision-express.svg" alt="Logotipo Visión Express"
-                  class="h-12 w-auto object-contain md:h-14"
-                  onerror="this.src='/src/assets/logo-vision-express.png'; this.onerror=null;">
+                <img src="./src/assets/logo-vision-express.png" alt="Logotipo Visión Express"
+                  class="h-12 w-auto object-contain md:h-14">
               </div>
             </div>
             <div class="relative aspect-video w-full overflow-hidden rounded-t-[1rem]">
@@ -450,7 +447,7 @@
           </div>
         </div>
         <div class="card p-8">
-          <form action="https://formsubmit.co/lmacbeth88@gmail.com" method="POST" class="grid gap-6">
+          <form id="contact-form" action="https://formsubmit.co/ajax/lmacbeth88@gmail.com" method="POST" class="grid gap-6">
             <input type="hidden" name="_subject" value="Nuevo lead - Visión Express Landing">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
@@ -487,6 +484,7 @@
                 placeholder="Horario de entrada/salida, sucursales o dudas"></textarea>
             </div>
             <button class="btn-primary justify-center" type="submit">Agendar demostración express</button>
+            <p id="form-status" class="hidden text-center text-sm" role="status" aria-live="polite"></p>
             <p class="text-center text-sm text-slate-500">Al enviar aceptas que te contactemos para agendar tu
               demostración.</p>
           </form>
@@ -498,10 +496,8 @@
   <footer class="border-t border-white/5">
     <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
       <div class="flex items-center gap-4">
-        <img src="/src/assets/logo-empresa.svg" alt="Logotipo Lexium Forge" class="h-12 w-auto object-contain"
-          onerror="this.src='/src/assets/logo-empresa.png'; this.onerror=null;">
-        <img src="/src/assets/logo-vision-express.svg" alt="Logotipo Visión Express" class="h-12 w-auto object-contain"
-          onerror="this.src='/src/assets/logo-vision-express.png'; this.onerror=null;">
+        <img src="./src/assets/logo-empresa.png" alt="Logotipo Lexium Forge" class="h-12 w-auto object-contain">
+        <img src="./src/assets/logo-vision-express.png" alt="Logotipo Visión Express" class="h-12 w-auto object-contain">
       </div>
       <div class="flex flex-wrap items-center gap-6 text-sm text-slate-400">
         <a class="transition hover:text-white" href="https://www.facebook.com/share/1E1JdhJyAJ/" target="_blank"
