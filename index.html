@@ -97,10 +97,16 @@
               </div>
             </div>
             <div class="relative aspect-video w-full overflow-hidden rounded-t-[1rem]">
-              <iframe class="h-full w-full" src="https://www.youtube.com/embed/cn7eHIngeUI?autoplay=1&mute=1&loop=1&playlist=cn7eHIngeUI&playsinline=1&rel=0"
+              <iframe id="hero-video" class="h-full w-full"
+                src="https://www.youtube.com/embed/cn7eHIngeUI?autoplay=1&mute=1&loop=1&playlist=cn7eHIngeUI&playsinline=1&rel=0&enablejsapi=1"
                 title="Visión Express - Demostración" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen loading="lazy"></iframe>
+              <button id="unmute-btn" type="button"
+                class="absolute bottom-3 right-3 z-10 rounded-full bg-black/60 px-3 py-1.5 text-xs font-medium text-white backdrop-blur transition hover:bg-black/80"
+                aria-label="Activar sonido del video">
+                🔇 Activar sonido
+              </button>
             </div>
             <div class="flex flex-wrap items-center justify-between gap-4 border-t border-white/5 px-6 py-4">
               <p class="text-sm text-slate-300">Demostración en acción: reconocimiento facial + marcaje</p>

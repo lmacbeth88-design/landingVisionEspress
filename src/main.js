@@ -34,6 +34,58 @@ buttons.forEach((button) => {
   })
 })
 
+// --- Activar sonido del video del hero (autoplay silenciado + unmute al clic) ---
+const unmuteBtn = document.querySelector('#unmute-btn')
+const heroIframe = document.querySelector('#hero-video')
+
+if (unmuteBtn && heroIframe) {
+  let player = null
+  let apiReady = false
+
+  function loadYouTubeAPI() {
+    if (window.YT && window.YT.Player) {
+      createPlayer()
+      return
+    }
+    const tag = document.createElement('script')
+    tag.src = 'https://www.youtube.com/iframe_api'
+    document.head.appendChild(tag)
+  }
+
+  function createPlayer() {
+    if (player) return
+    player = new window.YT.Player('hero-video', {
+      events: {
+        onReady: () => {
+          unmuteBtn.addEventListener('click', () => {
+            try {
+              player.unMute()
+              player.playVideo()
+            } catch (e) {
+              // fallback: reload iframe with audio
+            }
+            unmuteBtn.textContent = '🔊 Sonido activado'
+            unmuteBtn.disabled = true
+            unmuteBtn.classList.add('opacity-60')
+          })
+        },
+      },
+    })
+  }
+
+  window.onYouTubeIframeAPIReady = () => {
+    apiReady = true
+    createPlayer()
+  }
+
+  // Carga diferida para no bloquear el render inicial
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(loadYouTubeAPI, { timeout: 2000 })
+  } else {
+    setTimeout(loadYouTubeAPI, 500)
+  }
+}
+
 const contactForm = document.querySelector('#contact-form')
 const formStatus = document.querySelector('#form-status')
 
