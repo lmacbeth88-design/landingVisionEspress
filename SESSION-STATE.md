@@ -42,7 +42,7 @@
 - `SESSION-STATE.md` - Este archivo
 
 ## Pendiente
-- [x] Video de YouTube incrustado (ID: cn7eHIngeUI)
+- [x] Video de YouTube incrustado (ID: cn7eHIngeUI) con autoplay silenciado, loop infinito y botón "Activar sonido"
 - [x] QR de WhatsApp (`QR-landing.webp`) vinculado en landing
 
 ## Comandos para desarrollo
