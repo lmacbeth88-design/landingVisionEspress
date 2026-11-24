@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Visión Express | Control de asistencia con reconocimiento facial local</title>
   <meta name="description"
@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
@@ -59,7 +59,7 @@
           <div
             class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-1 text-sm text-slate-300">
             <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-            ⚠️ Nueva obligación STPS - Enero 2027
+            ⚠️ Nueva exigencia de registro electrónico de jornada, en proceso de definición por la STPS
           </div>
           <h1 class="text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Control de asistencia con reconocimiento facial, <span class="text-slate-300">en tu propia red</span>
@@ -67,7 +67,7 @@
           <p class="mt-6 max-w-xl text-lg text-slate-300">
             Se instala en una PC con Windows y cámara web que ya tienes. Marcaje facial con prueba de vida activa (giro +
             parpadeo), respaldo por PIN y reportes con folio de verificación. Diseñado para el registro electrónico de
-            jornada que la STPS establecerá en 2027.
+            jornada, en proceso de definición por la STPS.
           </p>
           <div class="mt-10 flex flex-wrap items-center gap-4">
             <a class="btn-primary" href="#contacto">Agendar demo de 15 minutos</a>
@@ -76,14 +76,14 @@
           <div class="mt-10 grid gap-6 sm:grid-cols-3">
             <div>
               <p class="text-2xl font-semibold">100% local</p>
-              <p class="mt-1 text-sm text-slate-400">Los datos biométricos no salen de tu red</p>
+              <p class="mt-1 text-sm text-slate-400">Procesamiento local en tu red</p>
             </div>
             <div>
               <p class="text-2xl font-semibold">Prueba de vida activa</p>
               <p class="mt-1 text-sm text-slate-400">Giro + parpadeo antes de cada marcaje</p>
             </div>
             <div>
-              <p class="text-2xl font-semibold">Instalación en una tarde</p>
+              <p class="text-2xl font-semibold">Instalación en sitio</p>
               <p class="mt-1 text-sm text-slate-400">Sobre equipo existente</p>
             </div>
           </div>
@@ -151,7 +151,7 @@
           <div class="card grid gap-6 p-8 sm:grid-cols-2">
             <div class="space-y-2">
               <p class="text-lg font-semibold">Trazabilidad</p>
-              <p class="text-slate-400">Hojas sueltas o controles improvisados son difíciles de sostener en una revisión.
+              <p class="text-slate-400">Bitácora verificable y reportes con folio para una revisión.
               </p>
             </div>
             <div class="space-y-2">
@@ -176,7 +176,7 @@
     <section id="solucion" class="section-padding">
       <div class="mx-auto max-w-6xl">
         <div class="mx-auto max-w-3xl text-center">
-          <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Solución en 3 pasos</p>
+          <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Proceso</p>
           <h2 class="mt-4 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Solución en 3 pasos</h2>
           <p class="mt-4 text-lg text-slate-300">Claridad absoluta. Operación inmediata.</p>
         </div>
@@ -205,7 +205,7 @@
     <section id="mvp" class="section-padding">
       <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
-          <p class="text-sm uppercase tracking-[0.4em] text-slate-500">¿qué incluye?</p>
+          <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Incluido</p>
           <h2 class="mt-4 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">¿Qué incluye?</h2>
           <p class="mt-6 text-lg text-slate-300">Todo lo necesario para cumplir, sin extras innecesarios.</p>
           <div class="mt-8">
@@ -414,7 +414,7 @@
                 <span>Atención en horario laboral</span>
               </div>
               <div class="mt-6 flex flex-wrap items-center gap-4">
-                <img src="/src/assets/QR-landing.webp" alt="QR para contactar por WhatsApp"
+                <img src="./src/assets/QR-landing.webp" alt="QR para contactar por WhatsApp"
                   class="h-28 w-28 rounded-lg border border-white/10 object-contain"
                   onerror="this.style.display='none'">
                 <p class="text-sm text-slate-400">Escanea para hablar por WhatsApp directamente.</p>
@@ -425,7 +425,7 @@
         <div class="card p-8">
           <form id="contact-form" action="https://formsubmit.co/ajax/lmacbeth88@gmail.com" method="POST" class="grid gap-6">
             <input type="hidden" name="_subject" value="Nuevo lead - Visión Express Landing">
-            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_template" value="table">
             <div class="grid gap-2">
               <label class="text-sm text-slate-300" for="nombre">Nombre completo</label>
@@ -483,7 +483,7 @@
         <a class="transition hover:text-white" href="https://wa.me/525569619300" target="_blank"
           rel="noopener">WhatsApp</a>
       </div>
-      <div class="flex items-center gap-4">        <img src="/src/assets/fenika-logo.svg" alt="Logotipo Fenika" class="h-10 w-auto object-contain mix-blend-screen drop-shadow-md" />
+      <div class="flex items-center gap-4">        <img src="./src/assets/fenika-logo.svg" alt="Logotipo Fenika" class="h-10 w-auto object-contain mix-blend-screen drop-shadow-md" />
         <div class="text-sm text-slate-500">
           <button id="fenika-info-btn" type="button"
             class="mb-2 inline-flex items-center rounded-lg border border-white/10 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:text-white">En alianza con FENIKA</button>
@@ -510,7 +510,7 @@
     </div>
   </dialog>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
