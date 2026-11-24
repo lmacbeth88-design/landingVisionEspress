@@ -42,7 +42,7 @@
 - `SESSION-STATE.md` - Este archivo
 
 ## Pendiente
-- [ ] Reemplazar `VIDEO_ID_AQUI` con ID real de YouTube (70% completado)
+- [x] Video de YouTube incrustado (ID: cn7eHIngeUI)
 - [x] QR de WhatsApp (`QR-landing.webp`) vinculado en landing
 
 ## Comandos para desarrollo
