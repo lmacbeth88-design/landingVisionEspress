@@ -86,6 +86,24 @@ if (unmuteBtn && heroIframe) {
   }
 }
 
+const fenikaBtn = document.querySelector('#fenika-info-btn')
+const fenikaDialog = document.querySelector('#fenika-dialog')
+const fenikaClose = document.querySelector('#fenika-close-btn')
+
+if (fenikaBtn && fenikaDialog) {
+  fenikaBtn.addEventListener('click', () => {
+    if (typeof fenikaDialog.showModal === 'function') {
+      fenikaDialog.showModal()
+    } else {
+      fenikaDialog.setAttribute('open', '')
+    }
+  })
+}
+
+if (fenikaClose && fenikaDialog) {
+  fenikaClose.addEventListener('click', () => fenikaDialog.close())
+}
+
 const contactForm = document.querySelector('#contact-form')
 const formStatus = document.querySelector('#form-status')
 
